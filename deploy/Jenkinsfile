@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     def allHosts = [
-                        'ubuntu@172.31.5.211',
+                        'ubuntu@172.31.8.66',
                         'ubuntu@172.31.7.100',
                         'ec2-user@172.31.10.184',
                         'ec2-user@172.31.5.211'
