@@ -4,3 +4,5 @@
 [nginx]
 172.31.8.66  ansible_ssh_user=ubuntu
 
+[db]
+172.31.7.100  ansible_ssh_user=ubuntu
