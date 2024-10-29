@@ -7,13 +7,18 @@
       tags:
         - always
         
-- name: tooling
-  import_playbook: ../static-assignments/webservers.yml
+#- name: tooling
+#   import_playbook: ../static-assignments/webservers.yml
 
-- name: nginx
-  import_playbook: ../static-assignments/tooling.yml
+#- name: nginx
+#  import_playbook: ../static-assignments/tooling.yml
 
-- name: db
-  import_playbook: ../static-assignments/db-servers.yml
+#- name: db
+#  import_playbook: ../static-assignments/db-servers.yml
+#  tags:
+#   - database
+
+- name: artifactory
+  import_playbook: ../static-assignments/artifactory.yml
   tags:
-   - database
+    - artifactory

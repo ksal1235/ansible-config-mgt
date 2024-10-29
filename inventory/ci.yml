@@ -1,0 +1,2 @@
+[artifactory]
+172.31.12.57 ansible_ssh_user='ubuntu'
