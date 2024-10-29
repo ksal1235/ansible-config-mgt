@@ -1,12 +1,12 @@
-#---
-#- hosts: all
-#  name: Include dynamic variables
-#  become: yes
-#  tasks:
-#  - include_tasks: ../dynamic-assignments/env-vars.yml
-#    tags:
-#       - always
-       
+---
+- hosts: all
+  name: Include dynamic variables
+  become: yes
+  tasks:
+    - include_tasks: ../dynamic-assignments/env-vars.yml
+      tags:
+        - always
+        
 - name: tooling
   import_playbook: ../static-assignments/webservers.yml
 
@@ -15,3 +15,5 @@
 
 - name: db
   import_playbook: ../static-assignments/db-servers.yml
+  tags:
+   - database
