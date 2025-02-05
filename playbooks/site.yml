@@ -9,9 +9,13 @@
 
 - name: tooling
   import_playbook: ../static-assignments/webservers.yml
+  tags:
+   - webservers
 
 - name: nginx
-  import_playbook: ../static-assignments/tooling.yml
+  import_playbook: ../static-assignments/loadbalancers.yml
+  tags:
+   - nginx-lb
 
 - name: db
   import_playbook: ../static-assignments/db-servers.yml
