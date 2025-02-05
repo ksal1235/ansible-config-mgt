@@ -4,5 +4,9 @@
 [nginx]
 172.31.8.154  ansible_ssh_user=ubuntu
 
+[db:vars]
+ansible_user=ec2-user
+ansbile_python_interpreter=/usr/bin/python
+
 [db]
 172.31.3.198 ansible_ssh_user=ubuntu
