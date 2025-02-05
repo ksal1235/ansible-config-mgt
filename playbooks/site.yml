@@ -1,3 +1,9 @@
----
-- import_playbook: ../static-assignments/webservers.yml
-- import_playbook: ../static-assignments/tooling.yml
+- name: tooling
+  import_playbook: ../static-assignments/uat_webservers.yml
+  tags:
+    - webserver
+
+- name: nginx
+  import_playbook: ../static-assignments/loadbalancers.yml
+  tags:
+    - nginx-lb
