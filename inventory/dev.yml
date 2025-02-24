@@ -8,6 +8,9 @@
 ansible_user='ubuntu'
 ansbile_python_interpreter=/usr/bin/python
 
+[sonarqube]
+172.31.4.235 ansible_ssh_user='ubuntu'
+
 [db]
 172.31.3.198 ansible_ssh_user='ubuntu'
 
