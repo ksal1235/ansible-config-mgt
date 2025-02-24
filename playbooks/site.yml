@@ -22,7 +22,13 @@
 #  tags:
 #   - database
 
-- name: artifactory
-  import_playbook: ../static-assignments/artifactory.yml
-  tags:
-    - artifactory
+#- name: artifactory
+#  import_playbook: ../static-assignments/artifactory.yml
+#  tags:
+#    - artifactory
+
+- name: import sonarqube file
+  import_playbook: ../static-assignments/sonarqube.yml
+
+- name: todo assignment
+  import_playbook: ../static-assignments/todo.yml
